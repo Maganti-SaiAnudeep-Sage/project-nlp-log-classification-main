@@ -1,0 +1,12 @@
+$kind: http-request
+name: Classify Logs
+url: 'http://127.0.0.1:8000/classify/'
+method: POST
+order: 1789177535087
+body:
+  type: formdata
+  content:
+    - key: file
+      type: file
+      src: resources/test.csv
+      description: CSV file with source and log_message columns
